@@ -1,0 +1,257 @@
+body{
+    background-color: #D9BCA3;
+}
+h1{
+    margin: 0px;
+
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 300;
+    font-size: 40pt;
+    color: #D9BCA3;
+    
+
+
+}
+#goBackBtn{
+    display: flex;
+    height: 40px;
+    background-color: #262225;
+    width: 100px;
+    position: fixed;
+    z-index: 60;
+    justify-content: center;
+    align-items: center;
+    left: 2vw;
+    top: 2vh;
+    text-decoration-style: none;
+    color: #D9BCA3;
+
+   
+    border-radius: 4px;
+    border-width: 0;
+   
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 18px;
+}
+.btn:active {
+    background-color: #CD9B8A;
+    box-shadow: none;
+    transform: translateY(2px);
+    
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 10vh;
+    background-color: #8C4A3B;
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+}
+header .brandLogo{
+    margin-left: 15px;
+    width: auto;
+    height: 90%;
+    justify-self: start;
+}
+
+
+nav{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+    margin: 50px;
+}
+nav li a{
+    text-decoration: none;
+    color: #D9BCA3;
+    font-size: 14pt;
+}
+
+.side {
+    position: fixed;
+    top: 20vh;
+    height: 60vh;
+    width: 10vw;
+    background-color: #262225; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: left 0.3s;
+
+    display: none;
+}
+.menu-toggle{
+    position: fixed;
+    top: 23vh;
+    height: 6vh;
+    width: 3vw;
+    left: 10vw; /* Ajusta esto para la posición horizontal de la solapa */
+    z-index: 9;
+    background-color: #262225;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow:  3px 2px rgba(0, 0, 0, 0.2); /* Ajusta los valores para el efecto deseado */
+    border-style: hidden;
+    transition: left 0.3s;
+}
+
+.banner{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.inverted{
+    flex-direction: row-reverse;
+}
+
+.banner img{
+    height: auto;
+    width: 27%;
+    border-style: double;
+    border-radius: 50%;
+    border-width: 15px;
+    border-color: #8C4A3B;
+    padding: 10px;
+}
+.brand.banner img{
+    height: 60%;
+    width: auto;
+}
+.banner .content{
+    align-self: start;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.banner h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30pt;
+    margin: 0px;
+}
+.banner p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 17pt;
+    width: 40vw;
+}
+
+.brand.banner{
+    margin-top: 7vh;
+}
+#brandContent {
+    background-color: #262225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 570px;
+    height: 570px;
+}
+@media(max-width: 1140px){
+    #brandContent{
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    
+}
+@media(max-width: 700px){
+    #brandContent{
+        width: 350px;
+        height: 350px;
+    }
+    #brandContent h1{
+        display: none;
+    }  
+    .banner{
+        padding: 170px 0px;
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .banner img{
+        width: 80%;
+    }
+    .banner .content{
+        align-self: auto;
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    .banner .content p{
+        margin: 0px;
+    }
+}
+@media(max-width: 1510px){
+    .banner img{
+        width: 400px;
+    }
+}
+#brandContent .brandLogo{
+    height: 60%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #D9BCA3;
+    border-radius: 50%;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+    height: 130px;
+    background-color: #8C4A3B;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerContainer h3{
+    margin: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 16pt;
+}
+.footerContainer p{
+    margin: 3px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.ornament{
+    height: 80%;
+    width: auto;
+}
+
+
+.hidden{
+    display: none;
+}

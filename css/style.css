@@ -1,0 +1,254 @@
+body{
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+#contentContainer{
+    margin: 10vh 0 15vh 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    
+    
+}
+hr{
+    width: 30vw;
+    margin: 20px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.btn{
+    margin: 0 30px;
+    padding: 10px;
+    background-color: #E9C8B5;
+    
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: 0 5px #CD9B8A;
+    color:#60748D;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 18px;
+}
+/*GoBack*/
+#goBackBtn{
+    display: none;
+    position: fixed;
+    top: 25px;
+    z-index: 50;
+}
+/*Greetings*/
+.greetings.section{
+    margin: 10vh 0 8vh 0;
+}
+h1, h2{
+    color: #CD9B8A;
+    font-weight: 700;
+    font-size: 40pt;
+}
+h3{
+    color: #CD9B8A;
+    font-weight: 700;
+    font-size: 30pt;
+    margin: 10px;
+}
+h4{
+    color: #60748D;
+    font-weight: 700;
+    font-size: 18pt;
+    margin: 0px;
+}
+h5{
+    color: #CD9B8A;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17pt;
+    padding-top: 20px;
+    max-width: 50vw;
+    text-align: center;
+}
+#homeNavbar{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 70px;
+}
+.navBar a{
+    position: relative;
+    flex-shrink: 0; /*Esto para que no se encojan al animarlos hacia un lado*/
+}
+
+.btn:hover {background-color: #D6C3B2}
+
+.btn:active {
+    background-color: #CD9B8A;
+    box-shadow: none;
+    transform: translateY(2px);
+    
+}
+/*About*/
+.about.section{
+    display: none;
+}
+#profilePic{
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+    border-color: #CD9B8A;
+    border-style: double;
+    padding: 5px;
+    border-width: 5px;
+}
+#aboutSkills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skillContainer{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+#aboutSkills h4{
+    margin: 0px 0px 15px 0px;
+}
+.about ul{
+    columns: 2;
+    
+    font-size: 14pt;
+}
+.skillStatus.advanced{
+    color: green;
+    font-weight: bold;
+}
+.skillStatus.intermediate{
+    color: rgb(131, 131, 23);
+}
+.skillStatus.basic{
+    color: gray;
+}
+.skillStatus.native{
+    font-weight: bold;
+    color: rgb(98, 78, 212);
+}
+
+/*Portfolio*/
+.portfolio.section{
+    display: none;
+
+
+}
+#myWork{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    margin-top: 5vh;
+}
+.workHolder{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 5px;
+    border-color: #D6C3B2;
+    border-style: solid;
+    border-width: 5px;
+}
+.workHolder:hover{
+    animation: 1s moreInfo forwards;
+    
+    
+}
+.workHolder.empty{
+    opacity: 30%;
+}
+.workHolder .webpagePreview{
+    width: 100%;
+
+}
+
+/*Contact Me*/
+.contactMe.section{
+    display: none;
+    gap: 10vh;
+    background-color: #D6C3B2;
+    width: 35vw;
+    height: 60vh;
+    margin-top: 10vh;
+    border-color: #CD9B8A;
+    border-width: 5px;
+    border-style: double;
+    
+}
+.contactMeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#contactMeContainerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+#socialsContent{
+    margin-top: 1vh;
+    display: flex;
+    gap: 2vw;
+}
+.contactMeContainer ul{
+    text-align: center;
+}
+.contactMeContainer li{
+    margin: 10px;
+}
+
+/*Animations*/
+@keyframes slide-out {
+    0%{
+        margin-right: 0%;
+        text-wrap: stable;
+    }
+    100%{
+        margin-right:100%;
+        opacity: 0%;
+    }
+}
+@keyframes slide-in{
+    0%{
+        margin-left: 50%;
+        display:flex;
+        opacity: 0%;
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 100%;
+    }
+}
+@keyframes moreInfo {
+    0%{
+        
+    }
+    100%{
+        opacity: 50%;
+    }
+    done{
+        opacity: 50%;
+    }
+}

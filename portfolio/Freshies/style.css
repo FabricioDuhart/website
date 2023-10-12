@@ -1,0 +1,38 @@
+body{
+    background: rgb(86,255,192);
+    background: linear-gradient(90deg, rgba(86,255,192,1) 0%, rgba(86,250,255,1) 43%, rgba(78,166,255,1) 100%);
+}
+
+/* CSS */
+#goBackButton {
+  background-color: #8294C4;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 10px;
+  outline: none;
+  padding: 10px 16px;
+  position: fixed;
+  z-index: 5;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#goBackButton:hover,
+#goBackButton:focus {
+  background-color: #8294C4;
+}
