@@ -100,31 +100,13 @@ p{
     transform: translateY(2px);
     
 }
-@media(max-width: 600px){
-    #homeNavbar{
-        flex-direction: column;
-        align-items: center;
-        gap: 5vh;
-        margin: 0px;
-    }
-    #contentContainer{
-        margin: 0px;
-    }
-    .greetings.section{
-        margin: 0px;
-    }
-    .greetings.section p{
-        width: 250px;
-        max-width: none;
-    }
-
-}
 /*About*/
 .about.section{
     display: none;
 }
 #profilePic{
     width: 20vw;
+    min-width: 400px;
     height: auto;
     border-radius: 50%;
     border-color: #CD9B8A;
@@ -132,19 +114,19 @@ p{
     padding: 5px;
     border-width: 5px;
 }
-#aboutSkills{
+#aboutSkills, #aboutLanguages{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#skillContainer{
+/*#skillContainer{ Wtf was this
     margin: 30px 0px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 100%;
-}
+} */
 #aboutSkills h4{
     margin: 0px 0px 15px 0px;
 }
@@ -167,6 +149,7 @@ p{
     font-weight: bold;
     color: rgb(98, 78, 212);
 }
+
 
 /*Portfolio*/
 .portfolio.section{
@@ -208,6 +191,7 @@ p{
     gap: 10vh;
     background-color: #D6C3B2;
     width: 35vw;
+    min-width: 500px;
     height: 60vh;
     margin-top: 10vh;
     border-color: #CD9B8A;
@@ -271,6 +255,7 @@ p{
         opacity: 50%;
     }
 }
+
 /*Responsiveness*/
 @media(max-width: 600px){
     #homeNavbar{
@@ -290,14 +275,19 @@ p{
         max-width: none;
     }
     #goBackBtn{
-        left: 3vw;
+        left: 1vw;
     }
     .about.section{
         margin: 5vh;
     }
+    h4{
+        width: 80vw;
+        text-align: center;
+        text-wrap: pretty;
+    }
     #profilePic{
         width: 60vw;
-        min-width: none;
+        min-width: 0px;
     }
     .about.section p{
         width: 85vw;
@@ -310,3 +300,6 @@ p{
         width: 80vw;
         height: 80vh;
     }
+
+}
+
