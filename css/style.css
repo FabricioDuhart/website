@@ -271,3 +271,42 @@ p{
         opacity: 50%;
     }
 }
+/*Responsiveness*/
+@media(max-width: 600px){
+    #homeNavbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+        margin: 0px;
+    }
+    #contentContainer{
+        margin: 0px;
+    }
+    .greetings.section{
+        margin: 0px;
+    }
+    .greetings.section p{
+        width: 250px;
+        max-width: none;
+    }
+    #goBackBtn{
+        left: 3vw;
+    }
+    .about.section{
+        margin: 5vh;
+    }
+    #profilePic{
+        width: 60vw;
+        min-width: none;
+    }
+    .about.section p{
+        width: 85vw;
+        max-width: none;
+    }
+    .portfolio.section{
+        margin: 7vh;
+    }
+    .contactMe.section{
+        width: 80vw;
+        height: 80vh;
+    }
