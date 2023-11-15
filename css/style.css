@@ -110,6 +110,9 @@ p{
     #contentContainer{
         margin: 0px;
     }
+    .greetings.section{
+        margin: 0px;
+    }
     .greetings.section p{
         width: 250px;
         max-width: none;
